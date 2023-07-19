@@ -1,0 +1,224 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #007d9354;
+  border-radius: 24px;
+  padding: 24px;
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+
+/* Inputs */
+input, textarea, select {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 0;
+  background-color: transparent;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: #213547;
+  color: #fff;
+  border: 0;
+  height: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 320px;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+td {
+  padding: 10px;
+}
+
+a {
+  font-weight: 500;
+  color: #007d93;
+  text-decoration: inherit;
+}
+
+a:hover { color: #005564; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f1f6f4;
+  padding-top: 4rem;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid #007d9354;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+footer {
+  border-top: 1px solid #007d9354;
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Books */
+ul.notes {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+ul.notes li {
+  flex: 1 0 21%;
+  background-color: #FCD633;
+  border-radius: 10px;
+  border: 2px solid #FCD633;
+}
+
+ul.notes li a {
+
+  padding: 1rem;
+  display: block;
+  flex-direction: column;
+  color: #213547;
+  height: 100%;
+
+  box-sizing: border-box;
+}
+
+ul.notes li:hover {
+  border: 2px solid rgb(171, 169, 0);
+}
+
+ul.notes h3 {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+ul.notes p {
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.single-note {
+  background-color: #FCD633;
+  border-radius: 10px;
+  border: 2px solid #FCD633;
+  padding: 20px;
+}
+
+.single-note .title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.single-note .description {
+  font-size: 1.6rem;
+}
+
+.add-note-button {
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.add-note-button > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.delete {
+  border: 0;
+  background-color: transparent;
+}
+
+.back-button {
+  display: block;
+}
+
+.breadcrump-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.removed-note {
+  background-color: #00a60e;
+  color: #f1f6f4;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.removed-note span {
+  font-size: 6rem;
+}
+
+.removed-note a {
+  color: #FCD633;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
